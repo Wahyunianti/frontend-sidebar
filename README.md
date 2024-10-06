@@ -2,6 +2,7 @@
 
 ## Preview
 
+<img width="1680" alt="Screen Shot 2024-10-06 at 14 31 14" src="https://github.com/user-attachments/assets/e6780aa7-379b-417d-9d97-8817661629ec">
 
 ## Tech
 - HTML 5
@@ -52,5 +53,21 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked + .collapsible + .sub-menu {
     max-height: 200px;
+}
+```
+
+### CSS Style Highlight
+CSS codes for disable hightlight:
+
+```bash
+li {
+    margin-block: 10px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: background-color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 ```
