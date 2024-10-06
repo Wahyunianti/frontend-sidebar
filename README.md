@@ -71,3 +71,40 @@ li {
     -webkit-tap-highlight-color: transparent;
 }
 ```
+
+### Javascript Hamburger
+Javascript codes for translate sidebar:
+
+CSS content
+```bash
+.content {
+    display: block;
+    margin-left: 16%;
+    transition: margin-left 0.3s ease; //important
+}
+.shifted {
+    margin-left: 0; //after
+}
+```
+
+CSS sidebar
+```bash
+.sidebar {
+    position: fixed;
+    transition: transform 0.3s ease;
+    transform: translateX(0%);
+}
+.hidden {
+    transform: translateX(-73%);
+}
+```
+
+Javascript
+```bash
+document.getElementById('hamburger').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    const content = document.getElementById('content');
+    sidebar.classList.toggle('hidden');
+    content.classList.toggle('shifted');
+});
+```
