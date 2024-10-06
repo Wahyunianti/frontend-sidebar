@@ -15,6 +15,12 @@ p {
 }
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+a:focus, a:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 p {
     font-weight: 400;
@@ -132,11 +138,14 @@ li {
     width: 100%;
     overflow: hidden;
     transition: background-color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 li a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
     gap: 10px;
 }
 li:hover {
